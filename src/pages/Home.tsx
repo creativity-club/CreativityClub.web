@@ -9,7 +9,7 @@ import {
   CarouselPrevious
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
-import { Palette, Coins, Pencil, Tent, Package, Users } from "lucide-react"; // Assuming these icons are still used in DomainCard
+import { Palette, Coins, Pencil, Tent, Package, Users } from "lucide-react"; 
 
 // Component for the Feature Cards (used in "Ignite Your Imagination" section)
 const FeatureCard = ({
@@ -60,17 +60,17 @@ const FeatureCard = ({
 
 // Component for the Upcoming Event card
 const UpcomingEvent = () => {
-  // Placeholder data for the upcoming event
+  // Updated event data per user request
   const event = {
-    title: "Creative Writing Workshop",
-    date: "May 15, 2023", // Consider updating the year if needed
+    title: "Ice-Breaking Session",
+    date: "May 18, 2025", 
     time: "6:00 PM",
-    description: "Join us for a magical journey into the world of creative writing. Learn techniques to craft compelling stories.",
-    link: "/events/creative-writing" // Link to the event details page
+    description: "A fun, low-pressure session designed to help members get comfortable, connect with each other, and instantly spark imaginative thinking through engaging activities and prompts. The goal is to break the ice, build rapport, and set a playful, collaborative tone for future creative exploration.",
+    link: "/events/ice-breaking-session" 
   };
 
   return (
-    <div className="rounded-xl p-1 magic-border"> {/* magic-border class likely provides a visual border */}
+    <div className="rounded-xl p-1 magic-border"> 
       <div className="bg-card/90 backdrop-blur-sm rounded-lg p-6">
         <div className="mb-4">
           <span className="text-accent text-sm font-medium">UPCOMING EVENT</span>
@@ -320,7 +320,7 @@ const Home = () => {
               description="Connect with like-minded individuals through our social and networking events."
               icon={(props) => (
                 <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 1 0 7.75"></path>
                 </svg>
               )}
               linkText="Join Events"
