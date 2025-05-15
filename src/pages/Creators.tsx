@@ -1,4 +1,5 @@
 
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
@@ -54,8 +55,8 @@ const CreatorProfile = ({ name, role, image, bio, linkedin, instagram, dribbble 
         
         {/* Bottom portion with bio and links */}
         <div className="p-5">
-          {/* Bio text */}
-          <p className="text-sm text-muted-foreground line-clamp-3 mb-4 h-[60px]">{bio}</p>
+          {/* Bio text - fixed text visibility by changing the text color */}
+          <p className="text-sm text-foreground mb-4 h-[60px] line-clamp-3">{bio}</p>
           
           {/* Social Media Links */}
           <div className="flex justify-center gap-3 mt-auto">
@@ -210,7 +211,7 @@ const Creators = () => {
         {/* Acknowledgements section */}
         <div className="text-center mt-24 mb-8">
           <h2 className="text-2xl font-serif mb-4">Acknowledgements</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-foreground max-w-2xl mx-auto">
             We extend our gratitude to all contributors, advisors, and supporters who played a role in making this website possible. 
             Your encouragement and feedback have been invaluable to our creative process.
           </p>
