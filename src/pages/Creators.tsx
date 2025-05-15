@@ -112,43 +112,43 @@ const Creators = () => {
     {
       name: "Rohit Krishna",
       role: "Project Lead and Ex-Design Head",
-      bio: "Led the project development and previously served as the Design Head. Specializes in digital art, UI/UX design, and project management.",
-      image: "https://images.unsplash.com/photo-1564564321837-a57b7070ac9f?auto=format&fit=crop&q=80&w=1780&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkedin: "#",
-      instagram: "#",
-      dribbble: "#"
+      bio: "Led the project development and previously served as the Design Head. Specializes in digital art, UI/UX design.",
+      image: "https://i.postimg.cc/zfKtrjtP/test.jpg",
+      linkedin: "https://www.linkedin.com/in/r0hitkrishna/",
+      instagram: "https://www.instagram.com/r0hitkrishna/",
+      dribbble: "https://dribbble.com/r0hitkrishna"
     },
     {
       name: "Shriya Garg",
       role: "Vice President & Project Manager",
       bio: "Oversaw the project management aspects of the website development. Coordinated with team members and ensured project milestones were met.",
-      image: "https://images.unsplash.com/photo-1531123897727-8f129e1687cd?auto=format&fit=crop&q=80&w=1780&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkedin: "#",
-      instagram: "#"
+      image: "https://i.postimg.cc/ncnsZD86/Whats-App-Image-2025-05-14-at-9-15-23-PM.jpg",
+      linkedin: "https://www.linkedin.com/in/shriya-garg-a64b39335/",
+      instagram: "https://www.instagram.com/_shriyagarg_26/"
     },
     {
       name: "Parth Khandelwal",
       role: "Finance Head & Developer",
       bio: "Combines financial expertise with web development skills. Led the financial planning and contributed to the development of the Creativity Club website.",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1780&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkedin: "#",
-      instagram: "#"
+      linkedin: "https://www.linkedin.com/in/parth-khandelwal-24b33127b",
+      instagram: "https://www.instagram.com/parthkhandelwal78/"
     },
     {
       name: "Anushka Chandergi",
       role: "Design Head & UI Developer",
       bio: "Contributed to the design implementation and front-end development. Created visual assets and helped structure the user interface elements.",
       image: "https://images.unsplash.com/photo-1594744803329-e519c265e10b?auto=format&fit=crop&q=80&w=1780&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkedin: "#",
-      instagram: "#"
+      linkedin: "https://www.linkedin.com/in/anushka-chandergi-17337128b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      instagram: "https://www.instagram.com/anushkavc0302/"
     },
     {
       name: "Veda Chandergi",
       role: "General Secretary & Content Manager",
       bio: "Managed content creation and organization for the website. Ensured all information was accurate and effectively communicated.",
       image: "https://images.unsplash.com/photo-1580489944761-c4337a53e2b1?auto=format&fit=crop&q=80&w=1780&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkedin: "#",
-      instagram: "#"
+      linkedin: "https://www.linkedin.com/in/veda-chandergi-7b355528b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      instagram: "https://www.instagram.com/vedach05/"
     },
     {
       name: "Haritha Nivrithi",
@@ -156,14 +156,14 @@ const Creators = () => {
       bio: "Crafted engaging content and ensured editorial quality for the website.",
       image: "https://images.unsplash.com/photo-1520452101351-34e62b62b85a?auto=format&fit=crop&q=80&w=1780&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       linkedin: "#",
-      instagram: "#"
+      instagram: "https://www.instagram.com/haritha_nivrithi/"
     },
     {
       name: "Suhani Balchandani",
       role: "Tester & Editor",
       bio: "Ensured the website was bug-free and contributed to content editing.",
       image: "https://images.unsplash.com/photo-1508214751196-cdfd46dac9f5?auto=format&fit=crop&q=80&w=1780&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/suhani-balchandani-ab0657235?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
       instagram: "#"
     },
     {
