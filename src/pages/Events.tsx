@@ -149,17 +149,17 @@ const Events = () => {
   // Combined array of all events (upcoming and past)
   // Use a 'type' property to distinguish between upcoming and past
   const allEvents = [
-     // Upcoming Events (using placeholder data for now, replace with actual upcoming events)
+     // Updated the first upcoming event to Ice-Breaking Session
      {
       id: "upcoming-1",
-      title: "Creative Writing Workshop",
-      date: "June 15, 2025", // Updated year
-      time: "3:00 PM",
-      description: "Join us for a workshop on creative writing techniques and storytelling. This workshop will cover various aspects of creative writing, including character development, plot construction, and dialogue writing. Whether you are a beginner or an experienced writer, you will find something new to learn and explore in this interactive session. Don't miss this opportunity to hone your writing skills and unleash your creativity!",
-      image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1073&q=80",
-      category: "Workshop",
+      title: "Ice-Breaking Session",
+      date: "May 18, 2025", 
+      time: "6:00 PM",
+      description: "A fun, low-pressure session designed to help members get comfortable, connect with each other, and instantly spark imaginative thinking through engaging activities and prompts. The goal is to break the ice, build rapport, and set a playful, collaborative tone for future creative exploration.",
+      image: "https://images.unsplash.com/photo-1528605248644-14dd04022da1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1070&q=80",
+      category: "Session",
       type: "upcoming",
-      link: "#" // Placeholder link
+      link: "/events/ice-breaking-session"
     },
     {
       id: "upcoming-2",
