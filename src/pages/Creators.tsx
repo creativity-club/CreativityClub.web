@@ -130,7 +130,7 @@ const Creators = () => {
       name: "Parth Khandelwal",
       role: "Finance Head & Developer",
       bio: "Combines financial expertise with web development skills. Led the financial planning and contributed to the development of the Creativity Club website.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1780&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "https://i.postimg.cc/rwbptWCk/PARTH.jpg",
       linkedin: "https://www.linkedin.com/in/parth-khandelwal-24b33127b",
       instagram: "https://www.instagram.com/parthkhandelwal78/"
     },
@@ -138,7 +138,7 @@ const Creators = () => {
       name: "Anushka Chandergi",
       role: "Design Head & UI Developer",
       bio: "Contributed to the design implementation and front-end development. Created visual assets and helped structure the user interface elements.",
-      image: "https://images.unsplash.com/photo-1594744803329-e519c265e10b?auto=format&fit=crop&q=80&w=1780&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "https://i.postimg.cc/D07jvtBD/anushka-pic.jpg",
       linkedin: "https://www.linkedin.com/in/anushka-chandergi-17337128b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       instagram: "https://www.instagram.com/anushkavc0302/"
     },
@@ -146,7 +146,7 @@ const Creators = () => {
       name: "Veda Chandergi",
       role: "General Secretary & Content Manager",
       bio: "Managed content creation and organization for the website. Ensured all information was accurate and effectively communicated.",
-      image: "https://images.unsplash.com/photo-1580489944761-c4337a53e2b1?auto=format&fit=crop&q=80&w=1780&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "https://i.postimg.cc/jqWm5bqV/veda-pic.jpg",
       linkedin: "https://www.linkedin.com/in/veda-chandergi-7b355528b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       instagram: "https://www.instagram.com/vedach05/"
     },
@@ -154,7 +154,7 @@ const Creators = () => {
       name: "Haritha Nivrithi",
       role: "Content Writer & Editor",
       bio: "Crafted engaging content and ensured editorial quality for the website.",
-      image: "https://images.unsplash.com/photo-1520452101351-34e62b62b85a?auto=format&fit=crop&q=80&w=1780&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "https://i.postimg.cc/NFWK7wSC/haritha-pic.jpg",
       linkedin: "#",
       instagram: "https://www.instagram.com/haritha_nivrithi/"
     },
@@ -162,9 +162,9 @@ const Creators = () => {
       name: "Suhani Balchandani",
       role: "Tester & Editor",
       bio: "Ensured the website was bug-free and contributed to content editing.",
-      image: "https://images.unsplash.com/photo-1508214751196-cdfd46dac9f5?auto=format&fit=crop&q=80&w=1780&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "https://i.postimg.cc/6QCq7Mjs/fc8623e2-6942-49ae-a9fc-07cbc433b718.jpg",
       linkedin: "https://www.linkedin.com/in/suhani-balchandani-ab0657235?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-      instagram: "#"
+      instagram: "https://www.instagram.com/suhaniibalchandani?igsh=MWdydWdnZWs2ZTllYw=="
     },
     {
       name: "Aayush Raj",
