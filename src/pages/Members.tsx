@@ -168,21 +168,21 @@ const Members = () => {
       role: "Operations Head",
       instagram: "https://www.instagram.com/pawan_kumar_sahu_s19/",
       linkedin: "https://www.linkedin.com/in/pawan-kumar-sahu-541401225/",
-      image: "https://placehold.co/600x400/FF69B4/FFFFFF?text=Pawan+Kumar+Sahu"
+      image: "https://i.postimg.cc/nLH3BjH3/PAWAN.jpg"
     },
     {
       name: "Shubh Kumar",
       role: "Logistics Head",
       instagram: "https://www.instagram.com/shubhkumar763/",
       linkedin: "https://www.linkedin.com/in/shubh-kumar-24359122a/",
-      image: "https://placehold.co/600x400/00CED1/FFFFFF?text=Shubh+Kumar"
+      image: "https://i.postimg.cc/L43SDC58/shubh.jpg"
     },
     {
       name: "Parth Khandelwal",
       role: "Finance Head",
       instagram: "https://www.instagram.com/parthkhandelwal78/",
       linkedin: "https://www.linkedin.com/in/parth-khandelwal-pk78/",
-      image: "https://placehold.co/600x400/FFA500/FFFFFF?text=Parth+Khandelwal"
+      image: "https://i.postimg.cc/rwbptWCk/PARTH.jpg"
     },
     {
       name: "Kashish Agarwal",
