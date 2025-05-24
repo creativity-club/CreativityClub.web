@@ -34,6 +34,20 @@ const Gallery = () => {
     "https://i.postimg.cc/3r4KL4z3/7.jpg",
     "https://i.postimg.cc/B6zVLvCg/8.jpg",
     "https://i.postimg.cc/sDhtW5qZ/9.jpg",
+    "https://i.postimg.cc/9XD7GB2b/16.jpg",
+    "https://i.postimg.cc/Z5Svztds/17.jpg",
+    "https://i.postimg.cc/3RddF3sN/18.jpg",
+    "https://i.postimg.cc/hGCXmX3N/19.jpg",
+    "https://i.postimg.cc/YqchQKb2/20.jpg",
+    "https://i.postimg.cc/zfDL3Cpn/21.jpg",
+    "https://i.postimg.cc/gkvrDSTV/22.jpg",
+    "https://i.postimg.cc/6pcqs7wT/23.jpg",
+    "https://i.postimg.cc/yNNd7VYj/24.jpg",
+    "https://i.postimg.cc/90yXL0Jm/25.jpg",
+    "https://i.postimg.cc/wvCT5L54/26.jpg",
+    "https://i.postimg.cc/wjqxk6Jz/27.jpg",
+    "https://i.postimg.cc/J4WzG3zG/28.jpg",
+
 
     // ... up to 50 images
   ];
