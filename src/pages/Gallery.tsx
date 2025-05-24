@@ -20,9 +20,21 @@ const Gallery = () => {
 
   const imageSources = [
     "https://i.postimg.cc/7ZYq98mv/1.jpg",
-    "https://source.unsplash.com/random/800x600?sig=1",
-    "https://source.unsplash.com/random/800x600?sig=2",
-    "https://source.unsplash.com/random/800x600?sig=3",
+    "https://i.postimg.cc/Jh1gSvnb/10.jpg",
+    "https://i.postimg.cc/qgVDwZS6/11.jpg",
+    "https://i.postimg.cc/SQBmHQpC/12.jpg",
+    "https://i.postimg.cc/ZqsSH4c9/13.jpg",
+    "https://i.postimg.cc/NGHc8hrM/14.jpg",
+    "https://i.postimg.cc/x1YnTs8d/15.jpg",
+    "https://i.postimg.cc/C1x3nXpF/2.jpg",
+    "https://i.postimg.cc/T1yBCbPF/3.jpg",
+    "https://i.postimg.cc/PxVBWyd1/4.jpg",
+    "https://i.postimg.cc/nL05x2jN/5.jpg",
+    "https://i.postimg.cc/1XL2Tznt/6.jpg",
+    "https://i.postimg.cc/3r4KL4z3/7.jpg",
+    "https://i.postimg.cc/B6zVLvCg/8.jpg",
+    "https://i.postimg.cc/sDhtW5qZ/9.jpg",
+
     // ... up to 50 images
   ];
 
