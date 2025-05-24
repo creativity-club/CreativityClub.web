@@ -49,6 +49,12 @@ const Gallery = () => {
     "https://i.postimg.cc/J4WzG3zG/28.jpg",
     "https://i.postimg.cc/t4zMbbYB/29.jpg",
     "https://i.postimg.cc/VLnh7n1Q/30.jpg",
+    "https://i.postimg.cc/c4hWL4MP/31.jpg",
+    "https://i.postimg.cc/3JRS28Qs/32.jpg",
+    "https://i.postimg.cc/VsBQKLT5/33.jpg",
+    "https://i.postimg.cc/1XWvbTw7/34.jpg",
+    "https://i.postimg.cc/4dQLQndg/35.jpg",
+
 
 
 
