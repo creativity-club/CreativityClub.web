@@ -4,7 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
-const Gallery = () => {
+/*const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   // Gallery images (placeholders for now)
@@ -13,7 +13,24 @@ const Gallery = () => {
     src: `https://source.unsplash.com/random/800x600?creativity&sig=${i}`,
     alt: `Gallery image ${i + 1}`
   }));
+*/
 
+const Gallery = () => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const imageSources = [
+    "https://i.postimg.cc/7ZYq98mv/1.jpg",
+    "https://source.unsplash.com/random/800x600?sig=1",
+    "https://source.unsplash.com/random/800x600?sig=2",
+    "https://source.unsplash.com/random/800x600?sig=3",
+    // ... up to 50 images
+  ];
+
+  const galleryImages = imageSources.map((src, index) => ({
+    id: index + 1,
+    src,
+    alt: `Gallery image ${index + 1}`
+  }));
   return (
     <>
       <HeroSection
