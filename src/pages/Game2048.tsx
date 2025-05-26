@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { ArrowLeft } from 'lucide-react';
@@ -12,32 +12,11 @@ const Game2048 = () => {
   const [won, setWon] = useState(false);
   const touchStart = useRef({ x: 0, y: 0 });
 
-  useEffect(() => {
-    resetGame();
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (gameOver || won) return;
-      switch (e.key) {
-        case 'ArrowUp': moveUp(); break;
-        case 'ArrowDown': moveDown(); break;
-        case 'ArrowLeft': moveLeft(); break;
-        case 'ArrowRight': moveRight(); break;
-        default: return;
-      }
-    };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [grid, gameOver, won]);
+  // Helper functions for grid manipulation
+  const rotateGrid = (currentGrid: number[][]) => currentGrid[0].map((_, i) => currentGrid.map(row => row[i]));
+  const reverseGrid = (currentGrid: number[][]) => currentGrid.map(row => [...row].reverse()); // Create a new array for reverse
 
-  const resetGame = () => {
-    const newGrid = Array(4).fill(null).map(() => Array(4).fill(0));
-    addRandomTile(addRandomTile(newGrid));
-    setGrid(newGrid);
-    setScore(0);
-    setGameOver(false);
-    setWon(false);
-  };
-
-  const addRandomTile = (currentGrid: number[][]) => {
+  const addRandomTile = useCallback((currentGrid: number[][]) => {
     const emptySpots = [];
     for (let i = 0; i < 4; i++) {
       for (let j = 0; j < 4; j++) {
@@ -49,66 +28,106 @@ const Game2048 = () => {
       currentGrid[spot.x][spot.y] = Math.random() < 0.9 ? 2 : 4;
     }
     return currentGrid;
-  };
+  }, []);
 
-  const move = (direction: 'left' | 'right' | 'up' | 'down') => {
-    const cloneGrid = JSON.parse(JSON.stringify(grid));
-    let changed = false;
-    let newScore = score;
-
-    const rotateGrid = (grid: number[][]) => grid[0].map((_, i) => grid.map(row => row[i]));
-    const reverseGrid = (grid: number[][]) => grid.map(row => row.reverse());
-
-    const operate = (grid: number[][]) => {
-      for (let i = 0; i < 4; i++) {
-        let row = grid[i].filter(val => val);
-        for (let j = 0; j < row.length - 1; j++) {
-          if (row[j] === row[j + 1]) {
-            row[j] *= 2;
-            newScore += row[j];
-            row[j + 1] = 0;
-            if (row[j] === 2048) setWon(true);
-          }
-        }
-        row = row.filter(val => val);
-        while (row.length < 4) row.push(0);
-        if (JSON.stringify(row) !== JSON.stringify(grid[i])) changed = true;
-        grid[i] = row;
-      }
-      return grid;
-    };
-
-    let tempGrid = cloneGrid;
-    if (direction === 'up') tempGrid = rotateGrid(operate(rotateGrid(tempGrid)));
-    if (direction === 'down') tempGrid = rotateGrid(reverseGrid(operate(reverseGrid(rotateGrid(tempGrid)))));
-    if (direction === 'left') tempGrid = operate(tempGrid);
-    if (direction === 'right') tempGrid = reverseGrid(operate(reverseGrid(tempGrid)));
-
-    if (changed) {
-      setScore(newScore);
-      setGrid(addRandomTile(tempGrid));
-      checkGameOver(tempGrid);
-    }
-  };
-
-  const moveLeft = () => move('left');
-  const moveRight = () => move('right');
-  const moveUp = () => move('up');
-  const moveDown = () => move('down');
-
-  const checkGameOver = (currentGrid: number[][]) => {
+  const checkGameOver = useCallback((currentGrid: number[][], currentScore: number) => {
     for (let i = 0; i < 4; i++) {
       for (let j = 0; j < 4; j++) {
         if (currentGrid[i][j] === 0 ||
           (j < 3 && currentGrid[i][j] === currentGrid[i][j + 1]) ||
           (i < 3 && currentGrid[i][j] === currentGrid[i + 1][j])) {
-          return;
+          return; // Game is not over
         }
       }
     }
     setGameOver(true);
-    toast({ title: "Game Over", description: `Your score: ${score}` });
-  };
+    toast({ title: "Game Over", description: `Your score: ${currentScore}` });
+  }, []);
+
+  const resetGame = useCallback(() => {
+    const newGrid = Array(4).fill(null).map(() => Array(4).fill(0));
+    addRandomTile(addRandomTile(newGrid));
+    setGrid(newGrid);
+    setScore(0);
+    setGameOver(false);
+    setWon(false);
+  }, [addRandomTile]);
+
+  const move = useCallback((direction: 'left' | 'right' | 'up' | 'down') => {
+    setGrid(prevGrid => {
+      let cloneGrid = JSON.parse(JSON.stringify(prevGrid));
+      let changed = false;
+      let newScore = score; // Use the latest score directly
+
+      const operate = (grid: number[][]) => {
+        let operatedGrid = grid.map(row => [...row]); // Deep copy for immutability
+        for (let i = 0; i < 4; i++) {
+          let row = operatedGrid[i].filter(val => val !== 0); // Filter out zeros
+
+          for (let j = 0; j < row.length - 1; j++) {
+            if (row[j] === row[j + 1]) {
+              row[j] *= 2;
+              newScore += row[j];
+              row[j + 1] = 0;
+              if (row[j] === 2048) setWon(true);
+            }
+          }
+          row = row.filter(val => val !== 0); // Filter out merged zeros
+          while (row.length < 4) row.push(0);
+
+          if (JSON.stringify(row) !== JSON.stringify(operatedGrid[i])) {
+            changed = true;
+          }
+          operatedGrid[i] = row;
+        }
+        return operatedGrid;
+      };
+
+      let tempGrid = cloneGrid;
+      if (direction === 'up') {
+        tempGrid = rotateGrid(operate(rotateGrid(tempGrid)));
+      } else if (direction === 'down') {
+        tempGrid = rotateGrid(reverseGrid(operate(reverseGrid(rotateGrid(tempGrid)))));
+      } else if (direction === 'left') {
+        tempGrid = operate(tempGrid);
+      } else if (direction === 'right') {
+        tempGrid = reverseGrid(operate(reverseGrid(tempGrid)));
+      }
+
+      if (changed) {
+        setScore(newScore);
+        const newGridWithTile = addRandomTile(tempGrid);
+        checkGameOver(newGridWithTile, newScore); // Pass current score for checkGameOver
+        return newGridWithTile;
+      }
+      return prevGrid; // No change, return previous grid
+    });
+  }, [addRandomTile, checkGameOver, score]); // Include score in dependencies for `newScore`
+
+  const moveLeft = useCallback(() => move('left'), [move]);
+  const moveRight = useCallback(() => move('right'), [move]);
+  const moveUp = useCallback(() => move('up'), [move]);
+  const moveDown = useCallback(() => move('down'), [move]);
+
+  useEffect(() => {
+    resetGame();
+  }, [resetGame]); // Call resetGame only once on mount
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Use the current state values directly from the closures
+      if (gameOver || won) return;
+      switch (e.key) {
+        case 'ArrowUp': moveUp(); break;
+        case 'ArrowDown': moveDown(); break;
+        case 'ArrowLeft': moveLeft(); break;
+        case 'ArrowRight': moveRight(); break;
+        default: return;
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [moveUp, moveDown, moveLeft, moveRight, gameOver, won]); // These functions are now stable due to useCallback
 
   const getTileColor = (value: number): string => {
     const colors: Record<number, string> = {
