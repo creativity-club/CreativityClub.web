@@ -1,5 +1,3 @@
-
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
@@ -32,12 +30,12 @@ const CreatorProfile = ({ name, role, image, bio, linkedin, instagram, dribbble 
         <div className="relative aspect-square overflow-hidden">
           {/* Background gradient for the image */}
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70 z-10"></div>
-          
+
           {/* Creator image */}
           {image ? (
-            <img 
-              src={image} 
-              alt={name} 
+            <img
+              src={image}
+              alt={name}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
           ) : (
@@ -45,19 +43,24 @@ const CreatorProfile = ({ name, role, image, bio, linkedin, instagram, dribbble 
               <span className="text-4xl font-bold text-white">{initials}</span>
             </div>
           )}
-          
+
           {/* Info overlay that appears on hover */}
           <div className="absolute bottom-0 left-0 right-0 p-4 z-20 transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
             <h3 className="text-xl font-serif mb-1 text-white">{name}</h3>
             <p className="text-accent/90 font-medium">{role}</p>
           </div>
         </div>
-        
+
         {/* Bottom portion with bio and links */}
         <div className="p-5">
           {/* Bio text - fixed text visibility by changing the text color */}
-          <p className="text-sm text-foreground mb-4 h-[60px] line-clamp-3">{bio}</p>
-          
+          {/*
+            PINPOINTED CHANGE:
+            Removed `h-[60px]` and `line-clamp-3` from the className below
+            to allow the full bio to be displayed.
+          */}
+          <p className="text-sm text-foreground mb-4">{bio}</p>
+
           {/* Social Media Links */}
           <div className="flex justify-center gap-3 mt-auto">
             {/* LinkedIn Link */}
@@ -75,7 +78,7 @@ const CreatorProfile = ({ name, role, image, bio, linkedin, instagram, dribbble 
 
             {/* Instagram Link */}
             {instagram && (
-               <a
+                <a
                 href={instagram}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -88,7 +91,7 @@ const CreatorProfile = ({ name, role, image, bio, linkedin, instagram, dribbble 
 
             {/* Dribbble Link (for Rohit) */}
             {dribbble && (
-               <a
+                <a
                 href={dribbble}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -155,7 +158,7 @@ const Creators = () => {
       role: "Content Writer & Editor",
       bio: "Crafted engaging content and ensured editorial quality for the website.",
       image: "https://i.postimg.cc/NFWK7wSC/haritha-pic.jpg",
-      linkedin: "#",
+      linkedin: "#", // Assuming this should be a valid link or omitted if not available
       instagram: "https://www.instagram.com/haritha_nivrithi/"
     },
     {
@@ -188,14 +191,14 @@ const Creators = () => {
             <ArrowLeft className="h-4 w-4 mr-2 transition-transform group-hover:-translate-x-1" />
             Back to Home
           </Link>
-          
+
           <h1 className="text-4xl md:text-5xl font-serif">
             <span className="text-gradient-primary">Meet Our Creators</span>
           </h1>
 
           {/* Introductory paragraph */}
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            The talented individuals who brought the Creativity Club website to life through their collaborative efforts, 
+            The talented individuals who brought the Creativity Club website to life through their collaborative efforts,
             innovative thinking, and technical expertise.
           </p>
         </div>
@@ -207,12 +210,12 @@ const Creators = () => {
             <CreatorProfile key={creator.name} {...creator} />
           ))}
         </div>
-        
+
         {/* Acknowledgements section */}
         <div className="text-center mt-24 mb-8">
           <h2 className="text-2xl font-serif mb-4">Acknowledgements</h2>
           <p className="text-foreground max-w-2xl mx-auto">
-            We extend our gratitude to all contributors, advisors, and supporters who played a role in making this website possible. 
+            We extend our gratitude to all contributors, advisors, and supporters who played a role in making this website possible.
             Your encouragement and feedback have been invaluable to our creative process.
           </p>
         </div>
