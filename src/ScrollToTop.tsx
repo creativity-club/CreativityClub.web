@@ -4,10 +4,17 @@ import { useLocation } from "react-router-dom";
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
+  // Scroll smoothly to top on route change
   useEffect(() => {
-    // Scroll to top on route change or refresh
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, [pathname]);
+
+  // Scroll smoothly to top on full page refresh
+  useEffect(() => {
+    window.onload = () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+  }, []);
 
   return null;
 };
