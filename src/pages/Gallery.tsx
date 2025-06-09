@@ -19,7 +19,7 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const imageSources = [
-    "https://i.postimg.cc/7ZYq98mv/1.jpg",
+    "https://i.postimg.cc/15qJd7Yh/1.jpg",
     "https://i.postimg.cc/Jh1gSvnb/10.jpg",
     "https://i.postimg.cc/qgVDwZS6/11.jpg",
     "https://i.postimg.cc/SQBmHQpC/12.jpg",
@@ -48,7 +48,7 @@ const Gallery = () => {
     "https://i.postimg.cc/wjqxk6Jz/27.jpg",
     "https://i.postimg.cc/J4WzG3zG/28.jpg",
     "https://i.postimg.cc/t4zMbbYB/29.jpg",
-    "https://i.postimg.cc/VLnh7n1Q/30.jpg",
+    "https://i.postimg.cc/QNPf0ZmJ/30.jpg",
     "https://i.postimg.cc/c4hWL4MP/31.jpg",
     "https://i.postimg.cc/3JRS28Qs/32.jpg",
     "https://i.postimg.cc/VsBQKLT5/33.jpg",
