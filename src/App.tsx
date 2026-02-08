@@ -10,7 +10,7 @@ import FluidCursor from "./components/FluidCursor";
 import ScrollToTop from "./ScrollToTop"; // ✅ import this
 import Index from "./pages/Index";
 import About from "./pages/About";
-import Events from "./pages/Events";
+// import Events from "./pages/Events";
 import EventDetail from "./pages/EventDetail";
 import Members from "./pages/Members";
 import Contact from "./pages/Contact";
