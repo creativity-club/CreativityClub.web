@@ -162,14 +162,6 @@ const Creators = () => {
       instagram: "https://www.instagram.com/haritha_nivrithi/"
     },
     {
-      name: "Suhani Balchandani",
-      role: "Tester & Editor",
-      bio: "Ensured the website was bug-free and contributed to content editing.",
-      image: "https://i.postimg.cc/6QCq7Mjs/fc8623e2-6942-49ae-a9fc-07cbc433b718.jpg",
-      linkedin: "https://www.linkedin.com/in/suhani-balchandani-ab0657235?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-      instagram: "https://www.instagram.com/suhaniibalchandani?igsh=MWdydWdnZWs2ZTllYw=="
-    },
-    {
       name: "Aayush Raj",
       role: "Developer & Tester",
       bio: "Contributed to the website's development and testing processes.",
