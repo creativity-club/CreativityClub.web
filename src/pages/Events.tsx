@@ -35,55 +35,55 @@ interface PreviousEventProps {
 }
 
 // Component to display a card for an upcoming event
-// const EventCard = ({ id, title, date, time, description, image, link, category }: EventCardProps) => {
-//   return (
-//     // Card styling for upcoming events with rounded corners and subtle background
-//     <Card className="overflow-hidden rounded-lg bg-card/50 backdrop-blur-sm border border-white/10 h-full flex flex-col shadow-lg">
-//       {/* Event image with aspect ratio for consistent sizing */}
-//       <div className="relative h-48 overflow-hidden">
-//         <img src={image} alt={title} className="w-full h-full object-cover" />
-//         {/* Event category badge */}
-//         <div className="absolute top-2 right-2 bg-primary/80 text-white px-3 py-1 text-sm rounded-md">
-//           {category}
-//         </div>
-//       </div>
-//       {/* Card content area with padding */}
-//       <CardContent className="p-6 flex-grow">
-//         {/* Date and Time information with icons */}
-//         <div className="flex items-center gap-4 text-sm mb-3 text-muted-foreground">
-//           <div className="flex items-center">
-//             {/* Calendar icon */}
-//             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-1 text-primary">
-//               <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
-//               <line x1="16" x2="16" y1="2" y2="6"></line>
-//               <line x1="8" x2="8" y1="2" y2="6"></line>
-//               <line x1="3" x2="21" y1="10" y2="10"></line>
-//             </svg>
-//             <span>{date}</span>
-//           </div>
-//           <div className="flex items-center">
-//             {/* Clock icon */}
-//             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-1 text-primary">
-//               <circle cx="12" cy="12" r="10"></circle>
-//               <polyline points="12 6 12 12 16 14"></polyline>
-//             </svg>
-//             <span>{time}</span>
-//           </div>
-//         </div>
-//         {/* Event title */}
-//         <h3 className="text-xl font-serif mb-2">{title}</h3>
-//         {/* Event description */}
-//         <p className="text-muted-foreground mb-4">{description}</p>
-//       </CardContent>
-//       {/* Card footer with a link/button */}
-//       <CardFooter className="p-6 pt-0">
-//         <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground rounded-md">
-//           <Link to={link}>View Details</Link>
-//         </Button>
-//       </CardFooter>
-//     </Card>
-//   );
-// };
+const EventCard = ({ id, title, date, time, description, image, link, category }: EventCardProps) => {
+  return (
+    // Card styling for upcoming events with rounded corners and subtle background
+    <Card className="overflow-hidden rounded-lg bg-card/50 backdrop-blur-sm border border-white/10 h-full flex flex-col shadow-lg">
+      {/* Event image with aspect ratio for consistent sizing */}
+      <div className="relative h-48 overflow-hidden">
+        <img src={image} alt={title} className="w-full h-full object-cover" />
+        {/* Event category badge */}
+        <div className="absolute top-2 right-2 bg-primary/80 text-white px-3 py-1 text-sm rounded-md">
+          {category}
+        </div>
+      </div>
+      {/* Card content area with padding */}
+      <CardContent className="p-6 flex-grow">
+        {/* Date and Time information with icons */}
+        <div className="flex items-center gap-4 text-sm mb-3 text-muted-foreground">
+          <div className="flex items-center">
+            {/* Calendar icon */}
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-1 text-primary">
+              <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+              <line x1="16" x2="16" y1="2" y2="6"></line>
+              <line x1="8" x2="8" y1="2" y2="6"></line>
+              <line x1="3" x2="21" y1="10" y2="10"></line>
+            </svg>
+            <span>{date}</span>
+          </div>
+          <div className="flex items-center">
+            {/* Clock icon */}
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-1 text-primary">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <span>{time}</span>
+          </div>
+        </div>
+        {/* Event title */}
+        <h3 className="text-xl font-serif mb-2">{title}</h3>
+        {/* Event description */}
+        <p className="text-muted-foreground mb-4">{description}</p>
+      </CardContent>
+      {/* Card footer with a link/button */}
+      <CardFooter className="p-6 pt-0">
+        <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground rounded-md">
+          <Link to={link}>View Details</Link>
+        </Button>
+      </CardFooter>
+    </Card>
+  );
+};
 
 // Component to display a card for a previous event
 const PreviousEventCard = ({ name, date, venue, eventType, description, image }: PreviousEventProps) => {
