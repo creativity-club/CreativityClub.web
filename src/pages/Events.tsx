@@ -43,9 +43,9 @@ const EventCard = ({ id, title, date, time, description, image, link, category }
       <div className="relative h-48 overflow-hidden">
         <img src={image} alt={title} className="w-full h-full object-cover" />
         {/* Event category badge */}
-        <div className="absolute top-2 right-2 bg-primary/80 text-white px-3 py-1 text-sm rounded-md">
+        {/* <div className="absolute top-2 right-2 bg-primary/80 text-white px-3 py-1 text-sm rounded-md">
           {category}
-        </div>
+        </div> */}
       </div>
       {/* Card content area with padding */}
       <CardContent className="p-6 flex-grow">
