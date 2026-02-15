@@ -153,68 +153,33 @@ const Events = () => {
      {
       id: "upcoming-1",
       title: "Pillow fight",
-      date: "Feb 28-1,2026", 
+      date: "Feb 28- March 1,2026", 
       time: "10:00 AM - 3:00PM",
       description: "Pillow Fight is a fun-filled recreational event inspired by the classic childhood game, reimagined to create an energetic and engaging experience. The event encourages participants to test their balance, coordination and endurance in a safe and controlled environment. With its light-hearted competitive format and strong spectator appeal, the event promotes sportsmanship, stress relief and social interaction, making it an entertaining addition to campus festivals and club activities.",
-      image: "https://images.unsplash.com/photo-1528605248644-14dd04022da1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1070&q=80",
+      image: "https://i.postimg.cc/5yXgfDWP/Whats-App-Image-2025-05-14-at-5-05-29-PM.jpg",
       category: "Session",
       type: "upcoming",
       // link: "/events/ice-breaking-session"
     },
     {
       id: "upcoming-2",
-      title: "Digital Art Masterclass",
-      date: "June 22, 2025", // Updated year
-      time: "4:30 PM",
-      description: "Learn digital art techniques from professional artists. This masterclass is designed for artists of all levels who want to explore the world of digital painting and illustration. Our experienced instructors will guide you through the process, from setting up your digital canvas to mastering various brushes and tools. Get ready to create stunning digital artworks and take your art to the next level!",
-      image: "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      title: "Takeshi's Castle:No Mercy Run",
+      date: "Feb 26, 2026", // Updated year
+      time: "9:00 AM- 3:00 PM",
+      description: "Takeshi’s Castle is a high-energy, obstacle-based recreational event designed to test participants’ physical coordination, balance and presence of mind in a fun and competitive environment. Multiple participants compete simultaneously in a continuous challenge course, where setbacks result in time delays rather than elimination, ensuring inclusivity and sustained engagement. The event emphasizes endurance, adaptability and sportsmanship while offering strong spectator appeal.",
+      image: "https://i.postimg.cc/130JgF1r/takeshi.jpg",
       category: "Masterclass",
       type: "upcoming",
       // link: "#" // Placeholder link
     },
      {
       id: "upcoming-4",
-      title: "Poetry Slam Night",
-      date: "July 18, 2025",
-      time: "7:00 PM",
-      description: "Express yourself through spoken word at our open mic poetry slam night. Share your original poems or simply enjoy listening to the powerful voices of our community. All styles and themes are welcome. Come and be a part of this evening of raw emotion and creative expression!",
-      image: "https://images.unsplash.com/photo-1470091688026-38b51162c8df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+      title: "The Fear Chronicles",
+      date: "Feb 27, 2026",
+      time: "9:00 AM- 3:00 PM",
+      description: "It s an immersive horror-themed experiential event that places participants in the role of paranormal investigators tasked with confronting supernatural entities. Through a combination of atmospheric storytelling, interactive challenges and fear-based puzzles, teams must demonstrate observation, problem-solving, courage and coordination.",
+      image: "https://i.postimg.cc/9QPJ49HG/fear-chronicles.jpg",
       category: "Performance",
-      type: "upcoming",
-      // link: "#" // Placeholder link
-    },
-    {
-      id: "upcoming-5",
-      title: "Sculpture Workshop",
-      date: "August 10, 2025",
-      time: "1:00 PM",
-      description: "Explore the art of three-dimensional creation in our hands-on sculpture workshop. Learn basic sculpting techniques and create your own masterpiece. Materials will be provided. Unleash your inner sculptor and bring your ideas to life!",
-      // Added a sample image URL for Sculpture Workshop
-      image: "https://placehold.co/600x400/FFA07A/000000?text=Sculpture+Workshop",
-      category: "Workshop",
-      type: "upcoming",
-      // link: "#" // Placeholder link
-    },
-     // Added two more sample upcoming events
-     {
-      id: "upcoming-6",
-      title: "Creative Coding Session",
-      date: "August 25, 2025",
-      time: "11:00 AM",
-      description: "Dive into the world of creative coding and explore how to generate art and visuals using code. This session is beginner-friendly.",
-      image: "https://placehold.co/600x400/FF5733/FFFFFF?text=Creative+Coding", // Sample image 1
-      category: "Session",
-      type: "upcoming",
-      // link: "#" // Placeholder link
-    },
-    {
-      id: "upcoming-7",
-      title: "Comics & Illustration Meetup",
-      date: "September 7, 2025",
-      time: "2:00 PM",
-      description: "Connect with fellow comics enthusiasts and illustrators. Share your work, get feedback, and collaborate on new projects.",
-      image: "https://placehold.co/600x400/33FF57/000000?text=Comics+Meetup", // Sample image 2
-      category: "Meetup",
       type: "upcoming",
       // link: "#" // Placeholder link
     },
