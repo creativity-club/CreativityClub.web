@@ -209,8 +209,8 @@ const Events = () => {
     {
       id: "past-cid",
       name: "CID",
-      date: "Aug 11",
-      venue: "Kamraj",
+      date: "September 14,2025",
+      venue: "Kamraj Auditorium",
       eventType: "Competition", // Added event type
       description: "🕵‍♀🌌 A chilling data breach has unleashed a wave of darkness. The deeper you probe, the more unsettling truths you'll uncover. Are you prepared to confront the darkness and reveal what lies hidden? 🕵‍♀💼 The digital realm is cloaked in darkness, and the secrets are buried deep🤐🌃. Prepare for an immersive journey through a web of intrigue and deception where every moment is crucial. Follow the trail of cryptic hints and uncover the truth lurking in the shadows. 🧐🕵‍♀",
       image: "https://i.postimg.cc/13jw30WQ/cid.jpg",
@@ -233,7 +233,7 @@ const Events = () => {
       venue: "Kamaraj Auditorium",
       eventType: "Event", // Added event type
       description: "Get ready to celebrate the best thing in life—friendship!💖 Join us for a day filled with laughter, unforgettable memories, and great fun! We've got refreshing activities lined up like twister and heads up, face painting😶‍🌫 and a Photo Booth📸 to capture your memories and a whole lot of joy. 🥳💫",
-      image: "https://i.postimg.cc/13jw30WQ/cid.jpg",
+      image: "https://i.postimg.cc/ydg2JTXY/friendshipday.jpg",
       type: "past"
     },
     {
@@ -260,7 +260,7 @@ const Events = () => {
     {
       id: "past-sdg",
       name: "SDG FUTURE FORWARD",
-      date: "Oct 8",
+      date: "Oct 8, 2024",
       venue: "SMV 209",
       eventType: "Workshop", // Added event type
       description: "Step into a world where bold ideas meet green innovation! Join us for 'Future Forward: Towards a Greener Tomorrow', as we embark on an exploration of the Sustainable Development Goals under visionary guidance.",
@@ -270,7 +270,7 @@ const Events = () => {
     {
       id: "past-light-the-way",
       name: "LIGHT THE WAY",
-      date: "Oct 9",
+      date: "Oct 9, 2024",
       venue: "Greenos",
       eventType: "Event", // Added event type
       description: "Get ready to illuminate your mind!🌟 Join us in celebrating mental health with creativity and connection!🙌✨ Explore our fun stalls filled with surprises and artistic delights.🎪❤ Let's shine a light on mental well-being together. 💫",
@@ -280,7 +280,7 @@ const Events = () => {
     {
       id: "past-mission-milkyway",
       name: "MISSION MILKYWAY",
-      date: "Oct 10",
+      date: "Oct 10, 2024",
       venue: "MB 210",
       eventType: "Competition", // Added event type
       description: "Join us for an out-of-this-world☄event this space week and blow some steam off at Mission Milkyway 🚀 Gather up your crew and prepare for some fun yet competitive games and challenges, but don't float out too far, make sure to make it back to Earth in time for CATs 😉 #SpaceWeek #VITV",
@@ -291,7 +291,7 @@ const Events = () => {
     {
       id: "past-shenanigans",
       name: "SHENANIGANS",
-      date: "8 MARCH",
+      date: "8 MARCH,2025",
       venue: "Opp SMV",
       eventType: "Event", // Added event type
       description: "Glitz, glam, and a little spree, SHE-NANIGANS is the place to be! 💃🏻✨ A day to celebrate strength, resilience, and the unstoppable spirit of women! From laughter-filled moments to inspiring conversations, let's come together to uplift, empower, and embrace the magic we bring to the world. 🩷🎀 Whether you're here to express, explore, or simply enjoy the vibes, this is your time to shine!🌸✨",
