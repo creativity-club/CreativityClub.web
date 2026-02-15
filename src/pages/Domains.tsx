@@ -79,8 +79,8 @@ const Domains = () => {
       imageUrl: "https://placehold.co/400x200/FFD700/000000?text=Editorial+Domain"
     },
     {
-      title: "EVENTS & OPERATIONS",
-      domainHead: "Surbhi Raj & Pawan Kumar Sahu", // Sample random name
+      title: "EVENTS",
+      domainHead: "Surbhi Raj", // Sample random name
       description: "The action squad! They plan and execute everything from fests to casual meetups—bringing every event idea to life.",
       icon: <Tent className="h-6 w-6 text-primary" />,
       // Using a reliable placeholder image
