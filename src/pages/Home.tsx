@@ -100,9 +100,9 @@ const UpcomingEvent = () => {
           </div>
         </div>
         <div>
-          <Button asChild className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-md">
+          {/* <Button asChild className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-md">
             <Link to={event.link}>Learn More</Link>
-          </Button>
+          </Button> */}
         </div>
       </div>
     </div>
