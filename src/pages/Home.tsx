@@ -62,11 +62,11 @@ const FeatureCard = ({
 const UpcomingEvent = () => {
   // Updated event data per user request
   const event = {
-    title: "Ice-Breaking Session",
-    date: "May 18, 2025", 
-    time: "6:00 PM",
-    description: "A fun, low-pressure session designed to help members get comfortable, connect with each other, and instantly spark imaginative thinking through engaging activities and prompts. The goal is to break the ice, build rapport, and set a playful, collaborative tone for future creative exploration.",
-    link: "/events/ice-breaking-session" 
+    title: "Takeshi's Castle:No Mercy Run",
+      date: "Feb 26, 2026", // Updated year
+      time: "9:00 AM- 3:00 PM",
+      description: "Takeshi’s Castle is a high-energy, obstacle-based recreational event designed to test participants’ physical coordination, balance and presence of mind in a fun and competitive environment. Multiple participants compete simultaneously in a continuous challenge course, where setbacks result in time delays rather than elimination, ensuring inclusivity and sustained engagement. The event emphasizes endurance, adaptability and sportsmanship while offering strong spectator appeal.",
+      link: "https://i.postimg.cc/130JgF1r/takeshi.jpg",
   };
 
   return (
