@@ -76,11 +76,11 @@ const EventCard = ({ id, title, date, time, description, image, link, category }
         <p className="text-muted-foreground mb-4">{description}</p>
       </CardContent>
       {/* Card footer with a link/button */}
-      <CardFooter className="p-6 pt-0">
+      {/* <CardFooter className="p-6 pt-0">
         <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground rounded-md">
           <Link to={link}>View Details</Link>
         </Button>
-      </CardFooter>
+      </CardFooter> */}
     </Card>
   );
 };
@@ -152,14 +152,14 @@ const Events = () => {
      // Updated the first upcoming event to Ice-Breaking Session
      {
       id: "upcoming-1",
-      title: "Ice-Breaking Session",
-      date: "May 18, 2025", 
-      time: "6:00 PM",
-      description: "A fun, low-pressure session designed to help members get comfortable, connect with each other, and instantly spark imaginative thinking through engaging activities and prompts. The goal is to break the ice, build rapport, and set a playful, collaborative tone for future creative exploration.",
+      title: "Pillow fight",
+      date: "Feb 28-1,2026", 
+      time: "10:00 AM - 3:00PM",
+      description: "Pillow Fight is a fun-filled recreational event inspired by the classic childhood game, reimagined to create an energetic and engaging experience. The event encourages participants to test their balance, coordination and endurance in a safe and controlled environment. With its light-hearted competitive format and strong spectator appeal, the event promotes sportsmanship, stress relief and social interaction, making it an entertaining addition to campus festivals and club activities.",
       image: "https://images.unsplash.com/photo-1528605248644-14dd04022da1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1070&q=80",
       category: "Session",
       type: "upcoming",
-      link: "/events/ice-breaking-session"
+      // link: "/events/ice-breaking-session"
     },
     {
       id: "upcoming-2",
@@ -170,7 +170,7 @@ const Events = () => {
       image: "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
       category: "Masterclass",
       type: "upcoming",
-      link: "#" // Placeholder link
+      // link: "#" // Placeholder link
     },
      {
       id: "upcoming-4",
@@ -181,7 +181,7 @@ const Events = () => {
       image: "https://images.unsplash.com/photo-1470091688026-38b51162c8df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
       category: "Performance",
       type: "upcoming",
-      link: "#" // Placeholder link
+      // link: "#" // Placeholder link
     },
     {
       id: "upcoming-5",
@@ -193,7 +193,7 @@ const Events = () => {
       image: "https://placehold.co/600x400/FFA07A/000000?text=Sculpture+Workshop",
       category: "Workshop",
       type: "upcoming",
-      link: "#" // Placeholder link
+      // link: "#" // Placeholder link
     },
      // Added two more sample upcoming events
      {
@@ -205,7 +205,7 @@ const Events = () => {
       image: "https://placehold.co/600x400/FF5733/FFFFFF?text=Creative+Coding", // Sample image 1
       category: "Session",
       type: "upcoming",
-      link: "#" // Placeholder link
+      // link: "#" // Placeholder link
     },
     {
       id: "upcoming-7",
@@ -216,7 +216,7 @@ const Events = () => {
       image: "https://placehold.co/600x400/33FF57/000000?text=Comics+Meetup", // Sample image 2
       category: "Meetup",
       type: "upcoming",
-      link: "#" // Placeholder link
+      // link: "#" // Placeholder link
     },
 
 
