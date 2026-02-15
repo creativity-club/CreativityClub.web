@@ -123,14 +123,14 @@ const Members = () => {
   const boardMembers2025: MemberData[] = [
     {
       name: "Palak Goyal",
-      role: "President",
+      role: "Chairperson",
       instagram: "https://www.instagram.com/palak__goyal2404/",
       linkedin: "https://www.linkedin.com/in/palak-goyal-362309222/",
       image: "https://i.postimg.cc/pTvbjcsQ/palak-pic.jpg"
     },
     {
       name: "Shriya Garg",
-      role: "Vice President",
+      role: "Vice Chairperson",
       instagram: "https://www.instagram.com/_shriyagarg_26/",
       linkedin: "https://www.linkedin.com/in/shriya-garg-sg26/",
       image: "https://i.postimg.cc/ncnsZD86/Whats-App-Image-2025-05-14-at-9-15-23-PM.jpg"
@@ -141,6 +141,13 @@ const Members = () => {
       instagram: "https://www.instagram.com/vedach05/",
       linkedin: "https://www.linkedin.com/in/veda-chandergi-5b9611215/",
       image: "https://i.postimg.cc/jqWm5bqV/veda-pic.jpg"
+    },
+    {
+      name: "Pawan Kumar Sahu",
+      role: "Co-Secretary",
+      instagram: "https://www.instagram.com/pawan_kumar_sahu_s19/",
+      linkedin: "https://www.linkedin.com/in/pawan-kumar-sahu-541401225/",
+      image: "https://i.postimg.cc/nLH3BjH3/PAWAN.jpg"
     },
     {
       name: "Anushka Chandergi",
@@ -162,13 +169,6 @@ const Members = () => {
       instagram: "https://www.instagram.com/surbhiraj979/",
       linkedin: "https://www.linkedin.com/in/surbhi-raj-545018225/",
       image: "https://i.postimg.cc/XYvwjV3d/surbhi-pic.jpg"
-    },
-    {
-      name: "Pawan Kumar Sahu",
-      role: "Operations Head",
-      instagram: "https://www.instagram.com/pawan_kumar_sahu_s19/",
-      linkedin: "https://www.linkedin.com/in/pawan-kumar-sahu-541401225/",
-      image: "https://i.postimg.cc/nLH3BjH3/PAWAN.jpg"
     },
     {
       name: "Shubh Kumar",
