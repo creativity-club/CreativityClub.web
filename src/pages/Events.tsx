@@ -94,9 +94,9 @@ const PreviousEventCard = ({ name, date, venue, eventType, description, image }:
       <div className="relative h-48 overflow-hidden">
         <img src={image} alt={name} className="w-full h-full object-cover" />
          {/* Event type badge */}
-         <div className="absolute top-2 right-2 bg-primary/80 text-white px-3 py-1 text-sm rounded-md">
+         {/* <div className="absolute top-2 right-2 bg-primary/80 text-white px-3 py-1 text-sm rounded-md">
           {eventType}
-        </div>
+        </div> */}
       </div>
       {/* Card content area with padding */}
       <CardContent className="p-6">
@@ -187,33 +187,23 @@ const Events = () => {
 
     // Previous Events (using the data you provided)
     {
-      id: "past-twist-a-tale",
-      name: "TWIST A TALE",
-      date: "March 7",
-      venue: "Ambedkar Auditorium",
+      id: "Creativity Meets Curiosity",
+      name: "Creativity Meets Curiosity",
+      date: "Nov 5,2025",
+      venue: "Takshila School",
       eventType: "Workshop", // Added event type
-      description: "Dive into the world of imagination with us at our \"Twist a Tale\" event! Let's paint stories with words and create memories that last a lifetime. Join us for an evening of magic and wonder!",
-      image: "https://i.postimg.cc/Z58cYrXh/Whats-App-Image-2025-05-14-at-5-05-35-PM-2.jpg",
+      description: "Creativity Meets Curiosity is an outreach event by the Creativity Club that inspires students to explore the power of imagination through curiosity-driven activities. It aims to spark innovation, foster creative expression and promote critical thinking, encouraging participants to transform their curiosity into impactful ideas and creative outcomes.",
+      image: "https://i.postimg.cc/cJtYgKjW/outreach.jpg",
       type: "past"
     },
     {
-      id: "past-ice-breaking",
-      name: "ICE BREAKING SESSION",
-      date: "April 21",
-      venue: "GOOGLE MEET",
+      id: "Memories",
+      name: "Meme-ories",
+      date: "August 31,2025",
+      venue: "Classroom",
       eventType: "Session", // Added event type
-      description: "Get ready to break the ice and shake off any awkwardness with the club's very official ice-breaking session extravaganza! We're bringing the fun with a lineup of hilarious games, wacky challenges, and interactive activities while introducing you to the nuance of the Creativity Club, that'll have you laughing, bonding, and making memories in no time.",
-      image: "https://placehold.co/600x400/000000/FFFFFF?text=Placeholder+Image", // Using a placeholder as no image link was provided
-      type: "past"
-    },
-    {
-      id: "past-friendship-day",
-      name: "FRIENDSHIP DAY",
-      date: "4th August, 2024",
-      venue: "Opp SMV",
-      eventType: "Event", // Added event type
-      description: "Get ready to celebrate the best thing in life—friendship!💖 Join us for a day filled with laughter, unforgettable memories, and great fun! We've got refreshing activities lined up like twister and heads up, face painting😶‍🌫 and a Photo Booth📸 to capture your memories and a whole lot of joy. 🥳💫",
-      image: "https://i.postimg.cc/1zMrwy9C/Whats-App-Image-2025-05-14-at-5-05-35-PM-1.jpg",
+      description: "Meme-ories is a team-based event featuring three engaging rounds of meme creation, caption writing, and pop culture trivia. Designed to test creativity, wit, and originality, the competition offers participants a platform to showcase humour while fostering teamwork and fresh perspectives.",
+      image: "https://i.postimg.cc/pL6zLQ0M/memories.jpg", // Using a placeholder as no image link was provided
       type: "past"
     },
     {
@@ -223,29 +213,50 @@ const Events = () => {
       venue: "Kamraj",
       eventType: "Competition", // Added event type
       description: "🕵‍♀🌌 A chilling data breach has unleashed a wave of darkness. The deeper you probe, the more unsettling truths you'll uncover. Are you prepared to confront the darkness and reveal what lies hidden? 🕵‍♀💼 The digital realm is cloaked in darkness, and the secrets are buried deep🤐🌃. Prepare for an immersive journey through a web of intrigue and deception where every moment is crucial. Follow the trail of cryptic hints and uncover the truth lurking in the shadows. 🧐🕵‍♀",
-      image: "https://i.postimg.cc/QMjqFFrK/Whats-App-Image-2025-05-14-at-5-05-35-PM.jpg",
+      image: "https://i.postimg.cc/13jw30WQ/cid.jpg",
+      type: "past"
+    },
+    {
+      id: "decrypt",
+      name: "Decrypt It",
+      date: "Nov 2, 2025",
+      venue: "Rajaji hall ",
+      eventType: "Competition", // Added event type
+      description: "Decrypt It  is an immersive, multi-round challenge that blends logic, creativity and exploration. Participants decode literary clues, uncover digital puzzles and trace hidden coordinates across campus. Designed to test analytical skills and teamwork, the event offers a thrilling detective experience where intellect and curiosity lead the way to victory.",
+      image: "https://i.postimg.cc/6pmnpVHw/decrypt-it.jpg",
+      type: "past"
+    },
+    {
+      id: "past-friendship-day",
+      name: "FRIENDSHIP DAY",
+      date: "September 14, 2025",
+      venue: "Kamaraj Auditorium",
+      eventType: "Event", // Added event type
+      description: "Get ready to celebrate the best thing in life—friendship!💖 Join us for a day filled with laughter, unforgettable memories, and great fun! We've got refreshing activities lined up like twister and heads up, face painting😶‍🌫 and a Photo Booth📸 to capture your memories and a whole lot of joy. 🥳💫",
+      image: "https://i.postimg.cc/13jw30WQ/cid.jpg",
+      type: "past"
+    },
+    {
+      id: "past-design-alchemy",
+      name: "DESIGN ALCHEMY",
+      date: "September 14, 2025",
+      venue: "MB-210",
+      eventType: "Workshop", // Added event type
+      description: "From concept to clickable! 🎯 Step into our hands-on workshop, 'Design Alchemy: Figma Fundamentals', where your ideas come to life. Ready to unleash your creativity and craft stunning designs?",
+      image: "https://i.postimg.cc/ht5Tt8Cn/design-alchemy.jpg",
       type: "past"
     },
     {
       id: "past-casa",
       name: "CASA",
-      date: "Aug 13",
+      date: "Aug 13, 2025",
       venue: "MB210",
       eventType: "Workshop", // Added event type
       description: "From the shadows of substance abuse to the light of new possibilities. 🌅 Join us at Hopeful Horizons, where resilience meets hope, as we stand together, overcoming addiction and forging paths to brighter futures.✨",
       image: "https://i.postimg.cc/yYSjtqPx/Whats-App-Image-2025-05-14-at-5-05-34-PM-1.jpg",
       type: "past"
     },
-    {
-      id: "past-design-alchemy",
-      name: "DESIGN ALCHEMY",
-      date: "Oct 4",
-      venue: "Kamraj Auditorium",
-      eventType: "Workshop", // Added event type
-      description: "From concept to clickable! 🎯 Step into our hands-on workshop, 'Design Alchemy: Figma Fundamentals', where your ideas come to life. Ready to unleash your creativity and craft stunning designs?",
-      image: "https://i.postimg.cc/13hBZWCH/Whats-App-Image-2025-05-14-at-5-05-34-PM.jpg",
-      type: "past"
-    },
+    
     {
       id: "past-sdg",
       name: "SDG FUTURE FORWARD",
@@ -276,16 +287,7 @@ const Events = () => {
       image: "https://i.postimg.cc/G3fzX3v6/Whats-App-Image-2025-05-14-at-5-05-33-PM.jpg",
       type: "past"
     },
-    {
-      id: "past-pillow-fight",
-      name: "PILLOW FIGHT",
-      date: "21-22 FEB",
-      venue: "Woodys",
-      eventType: "Competition", // Added event type
-      description: "luff flies, cheers ignite—who will stand tall in this feathery fight? Not all battles need armor and swords—some just need the perfect swing. 🛡⚔ Brace yourself for a showdown where quick reflexes and fearless strikes will decide the last one standing. 🫣🪶",
-      image: "https://i.postimg.cc/5yXgfDWP/Whats-App-Image-2025-05-14-at-5-05-29-PM.jpg",
-      type: "past"
-    },
+    
     {
       id: "past-shenanigans",
       name: "SHENANIGANS",
